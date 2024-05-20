@@ -5,6 +5,12 @@ has in a given class.
 
 student_pet_count_list = [0, 2, 4, 1, 1, 3, 0, 1, 0, 5, 2, 1, 0, 2]
 
+## 2.4 - Mutate items in list
+student_pet_count_list[2] = 3
+student_pet_count_list[3] = student_pet_count_list[3] + 1
+student_pet_count_list[-1] = student_pet_count_list[-1] + 2
+student_pet_count_list.append(3)
+
 ITEM_INDEX_THREE = student_pet_count_list[3]
 ITEM_THREE_FROM_BACK = student_pet_count_list[-3]
 
@@ -20,3 +26,4 @@ print("petCount: " + str(SUM_PETS))
 # Find mean: avg num pets per student
 MEAN = SUM_PETS / NUM_OF_STUDENTS
 print("AvgNumPetsPerStudent: " + str(MEAN))
+
